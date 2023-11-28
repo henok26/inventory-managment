@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Include FontAwesome CDN in  HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+      <!--Head-->
+      <div class="flex flex-col h-screen bg-white-900 ml-16 border border-black " >
+        <!-- Top Bar -->
+        <div class="bg-white-900 p-4 flex items-center justify-between border border-grey border-2">
+           
+    
+            <!-- Logo (Centered) -->
+            <div class="flex items-center">
+                <img src="inventory logo.png" alt="Logo" class="w-500 h-20">
+            </div>
+    
+            <!-- Notification and Search Icons -->
+            <div class="flex items-center">
+                 <!-- Profile Picture -->
+            <div class="flex items-end">
+                <img src="pro.jpg" alt="Profile Picture" class="w-8 h-8 rounded-full mr-2">
+                
+            </div>
+                <i class="fas fa-bell text-black mr-4"></i>
+                <i class="fas fa-search text-black"></i>
+            </div>
+        </div>
+
+    <div class="flex h-screen bg-white">
+      <!-- Sidebar -->
+      <div
+        class="bg-blue-700 p-4 w-20 fixed h-full top-0 left-0 transform transition-transform">
+        <!-- <h2 class="text-white text-2xl font-semibold mb-4">Inventory System</h2>-->
+        <!-- Hamburger Menu Button -->
+        <button
+          id="sidebar-toggle"
+          class="lg:hidden text-white focus:outline-none flex-col mb-4 justify-center">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+        <ul>
+          <li class="mb-4 flex items-center flex-col">
+            <i class="fas fa-tachometer-alt text-white text-xl mr-2"></i>
+            <a href="#" class="text-white hover:text-gray-300">Dashboard</a>
+          </li>
+          <li class="mb-4 flex items-center flex-col">
+            <i class="fas fa-box text-white text-xl mr-2"></i>
+            <a href="#" class="text-white hover:text-gray-300">Products</a>
+          </li>
+          <li class="mb-4 flex items-center flex-col">
+            <i class="fas fa-tags text-white text-xl mr-2"></i>
+            <a href="#" class="text-white hover:text-gray-300">Instockes</a>
+          </li>
+          <li class="mb-4 flex items-center flex-col">
+            <i class="fas fa-shopping-cart text-white text-xl mr-2"></i>
+            <a href="#" class="text-white hover:text-gray-300">Sales</a>
+          </li>
+          <!-- Add more links as needed -->
+        </ul>
+      </div>
+
+       <!-- Main Content -->
+    <div class="flex-1 p-8">
+        <!-- Page Heading -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-2xl font-semibold text-blue-500">Instock</h1>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded"> + New Stock Item</button>
+        </div>
+
+        <!-- Quick Search Button -->
+        <div class="mb-4">
+    <!-- Search Box with Icon -->
+    <div class="relative flex items-center">
+        <input type="text" placeholder="     Quick Search" class="bg-white text-gray-800 border rounded py-1 px-2 mr-2">
+        <i class="fas fa-search text-gray-500 absolute left-2"></i>
+    </div>
+        </div>
+
+        <!-- Table -->
+        <table class="w-full border">
+            <thead class=""  >
+                <tr class="bg-white ">
+                    <th class="p-2 ">Checkbox</th>
+                    <th class="p-2">Product ID</th>
+                    <th class="p-2">Product Name</th>
+                    <th class="p-2">Category</th>
+                    <th class="p-2">Item</th>
+                    <th class="p-2">Status</th>
+                </tr>
+            </thead>
+            <tbody class="">
+                 <!-- Sample Table Rows, add more rows as needed -->
+                 <tr>
+                    <td class="p-2 border-b text-center"><input type="checkbox"></td>
+                    <td class="p-2 border-b text-center">1</td>
+                    <td class="p-2 border-b text-center">Product A</td>
+                    <td class="p-2 border-b text-center">Category 1</td>
+                    <td class="p-2 border-b text-center">Item 1</td>
+                    <td class="p-2 border-b text-center">In Stock</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border-b-2 text-center"><input type="checkbox"></td>
+                    <td class="p-2 border-b-2 text-center">2</td>
+                    <td class="p-2 border-b-2 text-center">Product B</td>
+                    <td class="p-2 border-b-2 text-center">Category 2</td>
+                    <td class="p-2 border-b-2 text-center">Item 2</td>
+                    <td class="p-2 border-b text-center">Out of Stock</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border-b-2 text-center"><input type="checkbox"></td>
+                    <td class="p-2 border-b-2 text-center">2</td>
+                    <td class="p-2 border-b-2 text-center">Product B</td>
+                    <td class="p-2 border-b-2 text-center">Category 2</td>
+                    <td class="p-2 border-b-2 text-center">Item 2</td>
+                    <td class="p-2 border-b text-center">Out of Stock</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border-b-2 text-center"><input type="checkbox"></td>
+                    <td class="p-2 border-b-2 text-center">2</td>
+                    <td class="p-2 border-b-2 text-center">Product B</td>
+                    <td class="p-2 border-b-2 text-center">Category 2</td>
+                    <td class="p-2 border-b-2 text-center">Item 2</td>
+                    <td class="p-2 border-b text-center">Out of Stock</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border-b-2 text-center"><input type="checkbox"></td>
+                    <td class="p-2 border-b-2 text-center">2</td>
+                    <td class="p-2 border-b-2 text-center">Product B</td>
+                    <td class="p-2 border-b-2 text-center">Category 2</td>
+                    <td class="p-2 border-b-2 text-center">Item 2</td>
+                    <td class="p-2 border-b text-center">Out of Stock</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border-b-2 text-center"><input type="checkbox"></td>
+                    <td class="p-2 border-b-2 text-center">2</td>
+                    <td class="p-2 border-b-2 text-center">Product B</td>
+                    <td class="p-2 border-b-2 text-center">Category 2</td>
+                    <td class="p-2 border-b-2 text-center">Item 2</td>
+                    <td class="p-2 border-b text-center">Out of Stock</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script>
+      // JavaScript to toggle sidebar visibility
+      document
+        .getElementById("sidebar-toggle")
+        .addEventListener("click", function () {
+          const sidebar = document.querySelector(".bg-blue-500");
+          sidebar.classList.toggle("-translate-x-4");
+        });
+    </script>
+  </body>
+</html>
